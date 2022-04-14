@@ -54,11 +54,8 @@
   margin: 0;
 }
 
-.icon-bell-container:hover .notificationsList{
-display: block;
-}
+
 .dot {
-  z-index: 3;
   background-color: limegreen;
   border-radius: 360px;
   height: 5px;
@@ -118,7 +115,16 @@ cursor: pointer;
 80% {
     transform: rotate(-20deg);
 }
-} 
+}
+.home-icon:hover, .members-icon:hover, .chart-icon:hover, .setting-icon:hover{
+  animation: icon .5s;
+}
+@keyframes icon{
+ 
+  50%{
+    transform: scale(150%);
+  }
+}
 .verticalLine {
 border-left: 1PX solid #bab8b8;
 height: 40PX;
