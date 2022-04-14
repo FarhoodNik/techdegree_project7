@@ -203,7 +203,7 @@ send.addEventListener('click', () => {
 });
 const email = document.querySelector('#email');
 const public = document.querySelector('#public');
-const timezone = document.querySelector('.form-field')
+const timezone = document.querySelector('.time-field')
 const save = document.querySelector('.btn-save');
 const cancel = document.querySelector('.btn-cancel');
 save.addEventListener('click', () => {
