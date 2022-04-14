@@ -21,6 +21,15 @@ newMessage.addEventListener('click', e =>{
     }
 
 });
+const alertShow = document.querySelector(".icon-bell-container");
+alertShow.addEventListener("click", () =>{
+    if (notificationList.style.display === 'none'  ) {
+        notificationList.style.display = 'block';
+    } else {
+        notificationList.style.display = 'none';
+    }
+});
+
 let trafficCanvas = document.getElementById("traffic-chart");
 
 let trafficData = {
