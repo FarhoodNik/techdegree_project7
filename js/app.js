@@ -222,7 +222,7 @@ save.addEventListener('click', () => {
     localStorage.removeItem("timezone");
     email.checked = null;
     public.checked = null;
-    timezone.value = "";
+    timezone.value = "Select a Timezone";
   });
   
   function Storage() {
