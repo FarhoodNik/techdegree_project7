@@ -178,9 +178,9 @@ h2{margin-left: 12px;
   border-radius: 5px;
   cursor: pointer;
 }
-#traffic-chart{
+/* #traffic-chart{
   padding-left: 20px;
-}
+} */
 #daily-chart{
   padding: 15px;
 }
@@ -254,7 +254,8 @@ h3 {
   margin-top: 16px;
 }
 .social-text {
-  margin: 0px 20px;;
+  padding-right: 70px;
+  padding-left: 10px;
 }
 .logo{
   color: #7874c4;
@@ -378,41 +379,31 @@ button {
 @media screen and (min-width: 768px) {
   
   .grid-container {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: minmax(auto, 90px) 1fr;
       grid-template-areas: 
         "header header" 
         "nav main";
   }
-  .header, .tab{
-  margin-right: -23px;
-  }
-  .social-container,.mobile{
-    margin-right: -23px;
-  }
-  .member-section{
-    margin-right: -23px;
+  .message{
+    width: 890px;
   }
   .form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: -20px;
-    margin-right: -25px;
+    
   }
   .settings{
     
     display: flex;
     flex-direction: column;
-    margin-right: -25px;
+    /* margin-right: -25px; */
 
   }
   
   
   
   
-  .alert-wrapper{
-    margin-right: 0px;
-  }
+  
   .nav {
     height: 100%;
     
@@ -427,7 +418,8 @@ button {
     margin-top: 15px;
   }
   #traffic-chart{
-    padding-left: 30px;
+    padding-left: 50px;
+    width: 850px;
   }
   
 
@@ -441,13 +433,13 @@ button {
     margin-right: 1px;  
   }
   .chart-container-full {
-    width: 90vw;
+    width: 110vw;
   }
 
  .chart-container-half,
  .daily-chart,
  .mobile-chart {
-     width: 46.5vw;
+     width: 55vw;
  }
 
 
@@ -528,9 +520,7 @@ button {
     margin-right: 20px;
 
   }
-  #traffic-chart{
-    margin-left: 20px;
-  }
+ 
   .activity {
     border-top: none;
   }
@@ -567,24 +557,25 @@ button {
   }
   .massage-setting{
     display: grid;
-    grid-template-columns: 1fr 494px;
+    grid-template-columns: 1fr 583px;
     margin-right: 15px;
     
 
 
+  }
+  .message{
+    width: 600px;
+    padding-top: 5px;
   }
   .settings {
     border-top: none;
     border-left: solid #C7c7c7 1px;
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     align-items: stretch;
 
   }
-  .form{
-    margin-left: -10px;
-  }
+  
   .switch1, .switch2 {
     margin-right: 150px;
  }
