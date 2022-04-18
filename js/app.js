@@ -148,7 +148,7 @@ const dailyCanvas = document.getElementById("daily-chart");
      },
      plugins: {
          legend: {
-         dislay: false
+         display: false
          }
      }
  };

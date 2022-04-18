@@ -12,6 +12,7 @@
          "nav"
          "main";
  }
+ 
 .header {
   grid-area: header;
   display: flex;
@@ -254,7 +255,7 @@ h3 {
   margin-top: 16px;
 }
 .social-text {
-  padding-right: 70px;
+  padding-right: 10px;
   padding-left: 10px;
 }
 .logo{
@@ -379,13 +380,13 @@ button {
 @media screen and (min-width: 768px) {
   
   .grid-container {
-    grid-template-columns: minmax(auto, 90px) 1fr;
+    grid-template-columns: minmax(auto, 9%);
       grid-template-areas: 
         "header header" 
         "nav main";
   }
   .message{
-    width: 890px;
+    width: 104%;
   }
   .form{
     display: flex;
@@ -396,7 +397,7 @@ button {
     
     display: flex;
     flex-direction: column;
-    /* margin-right: -25px; */
+    margin-right: -40px;
 
   }
   
@@ -426,6 +427,8 @@ button {
   .traffic-nav {
   justify-content: flex-end;
   margin-top: -40px;
+  padding-right: 15px;
+
   }
   .dailyPart{
     display: grid;
@@ -433,13 +436,13 @@ button {
     margin-right: 1px;  
   }
   .chart-container-full {
-    width: 110vw;
+    width: 85vw;
   }
 
  .chart-container-half,
  .daily-chart,
  .mobile-chart {
-     width: 55vw;
+     width: 45vw;
  }
 
 
@@ -493,11 +496,11 @@ button {
     width: 93%;
   }
   .settings-btn{
-    width: calc(100% - 2.25rem);
+    width: 92%;
     
   }
   .time-field{
-    width: 95%;
+    width: 91.5%;
   }
 
 }
@@ -506,6 +509,29 @@ button {
     grid-template-columns: 80px 1fr;
     
   }
+  .chart-container-full {
+    width: 119%;
+ }
+ .chart-container-half {
+  width: 170%;
+ }
+  #daily-chart{
+    padding-top: 12%;
+    margin-left: 4%;
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  #mobile-chart {
+    padding: 30px;
+    padding-left: 5%;
+    margin-left: 5%;
+  }
+  .message {
+    width: 145%;
+    padding-top: 4px;
+    
+  }
+
   .socialPart {
     display: flex;
     flex-direction: row;
@@ -563,16 +589,16 @@ button {
 
 
   }
-  .message{
-    width: 600px;
-    padding-top: 5px;
-  }
+  
   .settings {
     border-top: none;
     border-left: solid #C7c7c7 1px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    margin-left: 23%;
+    padding-right: 3%
+    
 
   }
   
@@ -588,6 +614,13 @@ button {
   }
   .time-field{
     width: 93%;
+  }
+  canvas {
+    max-width: 50%;
+  }
+  
+  .traffic canvas  {
+    max-width: 80%;
   }
  
   
