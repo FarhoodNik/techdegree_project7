@@ -124,7 +124,7 @@ cursor: pointer;
 @keyframes icon{
  
   50%{
-    transform: scale(150%);
+    transform: scale(2);
   }
 }
 .verticalLine {
