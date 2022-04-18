@@ -380,7 +380,7 @@ button {
 @media screen and (min-width: 768px) {
   
   .grid-container {
-    grid-template-columns: minmax(auto, 9%);
+    grid-template-columns: 55px 1fr;
       grid-template-areas: 
         "header header" 
         "nav main";
@@ -401,13 +401,22 @@ button {
 
   }
   
+  .daily-chart, .members, .activity, .settings, .message{
+  grid-column: 1 / span 2;}
+  .mobile{
+    grid-column: 2 / span 1;
+  }
   
-  
+
   
   
   .nav {
     height: 100%;
     
+    
+  }
+  .traffic, .social-container{
+    grid-column: 1 / span 2
   }
   .navIcon{
     display: inline-block;
@@ -545,6 +554,7 @@ button {
     margin-right: 20px;
 
   }
+  
  
   .activity {
     border-top: none;
@@ -622,7 +632,13 @@ button {
     max-width: 80%;
   }
  
-  
+ 
+    .members,  .message{
+      grid-column: 1 / span 1;
+    }
+    .activity, .settings{
+      grid-column: 2 / span 1;
+    }
  
  
  
